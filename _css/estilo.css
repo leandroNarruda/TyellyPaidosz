@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav a img{
+    padding: 5px;
+}
+nav div ul li{
+    padding: 10px 0px;
+}
+nav{
+    background-color: black;
+}
+img{
+    margin-bottom: 20px;
+}
+h1{
+    clear: both;
+}
+#feminino{
+    margin: 0 auto;
+    background: blue;
+
+}
+#secao{
+    float: right;
+}
+.card{
+    width: 300px;
+    height: 450px;
+    overflow: hidden;
+    margin: 25px;
+}
+.small{
+    height: 100%;
+    cursor: pointer;
+    transition: all linear 0.2s;
+}
+.small:hover{
+    transform: scale(1.05);
+}
+.row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#imgModal{
+    width: 500px;
+    height: 650px;
+
+}

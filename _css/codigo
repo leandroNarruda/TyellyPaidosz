@@ -1,0 +1,58 @@
+
+.modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    visibility: visible;
+}
+.modalContent{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+
+}
+#btnClose{
+    color: #ffffff;
+    background-color: black;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    padding: 5px 10px;
+    font-size: 25px;
+    border: solid 1px white;
+
+
+}
+
+.modal_active{
+    visibility: visible;
+}
+
+#modalImg{
+    width: 65vw;
+
+}
+
+
+
+let imagens = document.querySelectorAll('.small');
+let modal = document.querySelector('.modal');
+let modalImg = document.querySelector('#modalImg');
+let btnClose = document.querySelector('#btnClose');
+let srcVal = "";
+
+for (let i = 0; i < imagens.length; i++) {
+    imagens[i].addEventListener('click', function () {
+        srcVal = imagens[i].getAttribute('src');
+        modalImg.setAttribute('src', srcVal)
+        modal.classList.toggle('modal_active');
+
+    });
+}
+btnClose.addEventListener('click', function () {
+
+    modal.classList.toggle('modal_active');
+
+});
+
