@@ -1,6 +1,19 @@
-*{
-    margin: 0;
-    padding: 0;
+
+    nav div.carousel-inner{
+        background-color: #d2a4c6;
+    }
+
+nav div.carousel-inner div img{
+    margin-right: 100px;
+}
+
+@media (max-width:768px){
+    nav div.carousel-inner{
+        min-height: 500px;
+    }
+    div.carousel-inner div img{
+
+    }
 }
 
 nav a img{
